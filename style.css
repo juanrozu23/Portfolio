@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    font-family: Futura, Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+#Logo {
+  width: 55vw;
+  min-width: 400px;
+  align-items: center;
+}
+
+#In_Div_Intro {
+  width: 50vw;
+  font-family: Futura, Arial;
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#In_Instructions {
+  font-size: 1.1em;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 7vh;
+}
+.In_Left {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 0;
+}
+
+.In_Right { 
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+.In_Middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+}
+
+#Play {
+  font color: orange;
+}
+
+.Explanation {
+  width: 55vw;
+}
+
+#In_Div_Exp_DanceandConnect {
+  display: none;
+}
+
+#In_Div_Exp_BennytheWhale {
+  display: none;
+}
+
+#In_Div_Exp_Oasis {
+  display: none;
+}
+
+#In_Div_Exp_Chroma {
+  display: none;
+}
+
+
+/* BUTTONS */
+  .Button {
+    height: 23vh;
+    opacity: 80%;
+    transition: height 1s;
+  }
+
+  .Button:hover {
+    height: 25vh;
+    opacity: 100%;
+  }
+
+  #Me {
+    width: 30vw;
+    opacity: 90%;
+    transition: width 1s;
+  }
+
+  #Me:hover {
+    opacity: 100%;
+    width: 31vw;
+  }
+
+
+  /* IPAD */
+  @media only screen and (max-width: 1400px){
+    .In_Right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    body {
+      flex-wrap: wrap;
+    }
+
+    #Logo {
+      width: 50vw;
+    }
+
+    #In_Instructions {
+      margin-top: 6px;
+    }
+
+    .Button {
+      height: 27vh;
+    }
+  }
+
+  /* PHONE */
+  @media only screen and (max-width: 600px) {
+                    body {
+                      flex-direction: column;
+                      justify-content: center;
+                    }
+
+                    #In_Instructions {
+                      width: 90vw;
+                      margin: 10vw;
+                    }
+
+                    #In_Intro_p {
+                      font-size: 0.7em;
+                    }
+
+                      #In_Div_Intro {
+                        width: 90vw;
+                      }
+
+                      .In_Right { 
+                        justify-content: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                      }
+
+                      .In_Left {
+                        justify-content: center;
+                      }
+
+                      #In_Div_DanceandConnect {
+                        display: flex;
+                        justify-content: center;
+                      }
+
+                      #In_Div_BennytheWhale {
+                        display: flex;
+                        justify-content: center;
+                      }
+
+                      #In_Div_Oasis {
+                        display: flex;
+                        justify-content: center;
+                      }
+
+
+                    #In_Div_Chroma {
+                      display: flex;
+                      justify-content: center;
+                    }
+
+                    #In_Instructions {
+                      margin-top: 0;
+                    }
+
+                    .Explanation {
+                      width: 100vw;
+                    }
+    }
+    /* END OF PHONE */
